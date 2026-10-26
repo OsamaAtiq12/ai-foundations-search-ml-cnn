@@ -1,0 +1,33 @@
+1. Which search algorithm(s) perform better in terms of time efficiency (i.e., runs fastest)?
+Why?
+
+According to my understanding A * Search performs the best for this maze problem beacause as we know that it uses
+heuristic to estimate the cost from current node to the goal node which as it prioritizes the node being explored that
+are more likely to lead the goal.So , what this means is that it will explore lesser number of nodes to Reach the goal 
+node than BFS or DFS making it faster.
+
+why not BFS? . the reason is that is explore all nodes in the current depth  and then move deeper 
+(exploring all nodes at every depth) it explores uneccessary nodes that makes it inefficient. 
+
+why not DFS? . the reason is that as we know it goes deeper in one direction which can be a incorrect path towards goal
+this wastes time and can take longer time to run so thats why its not efficient.
+  
+
+
+2. Which search algorithm(s) is better in terms of returning the shortest path? Why?
+
+ A* and BFS both gurantee in returning the shortest path in this maze problem.
+
+ Reason:
+
+ A * combines the actual cost from the start and the estimated cost heuristic. Due to this consistent heuristic that
+ includes the euclidean distance and step cost of 1 A* is optimal and complete. So, it will always find the optimal
+ and shortest path.
+
+ BFS explores all the possbile path in a level by level traversal before moving to the longer paths ensuring that the 
+ first time it reaches the goal , it has found the shortest path.
+
+ DFS does not gurrantee the shortest path as it can find a path quickly but it is not neccessary that it would be a 
+ short path to the goal due to its depth first approach as it goes deeper. As it does not explore in the order of path 
+ length.
+ 
